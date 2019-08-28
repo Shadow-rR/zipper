@@ -1,0 +1,11 @@
+Given three strings, we are to determine whether the third string can be formed by combining 
+the characters in the first two strings. The first two strings can be mixed arbitrarily, but each must 
+stay in its original order.This means that the third string should only contain the first two string character and its length equal to the sum of the length of first two strings.
+Characters in order mean that the string should contain the letters of first and second string in the same order as it is present in the original string.
+   For eg-cat tree ctratee
+   The third string can be formed by combining the letters of the first two and the letters are placed in order.
+However,
+   For eg-cat tree tctaree
+   The third string is formed by combining characters of first two but the string 'cat' loses its original order.
+So,our prime task is to accept a data set the first line of which will contain number of test cases T.
+The next t lines will contain 3 string each and we have to display whether the third string can be formed by combining letters of the first two the order remaining unchanged.
