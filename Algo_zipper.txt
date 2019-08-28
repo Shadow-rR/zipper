@@ -1,0 +1,16 @@
+1.Accept no. of test cases t
+2.We run a loop till t so that the next t lines will contain three strings separated by a space.
+(Our task is to find whether the third string can be formed by the first two strings, keeping the order unchanged)
+3.First we check whether the length of the third string is equal to sum of length of first two string . If not,we print "Data Set N:No"
+4.If step 3 condition is met we take two pointers p1 and p2 which will initially point at the 0th index of the first and second string respectively.
+We also declare flag=0,which will become 1 if string cannot be formed.
+5.We run a loop from j=0 to j<l3(length of third string).Thus j is the pointer to the character of the third string.
+6.First check whether the two pointers are equal and less than l3-1 or not.If yes proceed to next step else proceed to step 11.
+7.Check whether the jth character of third string is present in p1th index of first or p2th index of second string.If not present in either raise flag to 1 and break.
+8.If present in both the string find out i1(the index of (p1+1)th character of string1 in string3 after the jth index) and i2(the index of (p2+1)th character of second string in string3 after jth position).
+Increase the pointer of that string which has the smallest index value of next character(if same then it doesn't matter which string pointer gets incremented).
+9.Next check if only p1th character equals jth char then increase p1 by 1
+10.Check if only p2 character equals jth char then increase p2 by 1.
+11.If step 6 not satisfied check whether p1<=p2 .Check first if p1th index equals the jth index then check for p2th and jth.Increase the respective pointer if condition found true else set flag to 1 and break
+12If step 11 not satisfied check first for p2 and then p1 .If none match the jth index of string 3 set flag to 1 and break
+13.Last step is to check the value of flag.If flag=0 print YES else print NO.
